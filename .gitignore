@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+test_Twitter_Dataset.json
+Deprecated/
+
+ML Scripts/split_text_files_v2
+ML Scripts/split3
+
+venv/

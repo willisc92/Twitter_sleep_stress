@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_502a0c3f2a474cb79a29f18fccf9d14d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_502a0c3f2a474cb79a29f18fccf9d14d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_502a0c3f2a474cb79a29f18fccf9d14d = L.map(
+        'map_502a0c3f2a474cb79a29f18fccf9d14d', {
+        center: [56.1304, -106.3468],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+L.control.scale().addTo(map_502a0c3f2a474cb79a29f18fccf9d14d);
+
+    
+    var tile_layer_aeed2ca6cbf941fabffe6b493a889ba0 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_502a0c3f2a474cb79a29f18fccf9d14d);
+    
+            var heat_map_7b36592e61ab40c091c509e4c305667b = L.heatLayer(
+                [[43.403221, -79.639319], [50.617242, -120.541292], [53.812891, -122.900929], [43.403221, -79.639319], [43.614585999999996, -78.95920600000001], [45.435272, -73.905523], [43.403221, -79.639319], [43.403221, -79.639319], [44.160540000000005, -76.71275899999999], [50.39659, -104.778398], [43.403221, -79.639319], [44.961937, -76.353876], [43.373074, -79.810142], [49.19854, -123.22421499999999], [43.951418, -80.52069300000001], [49.19854, -123.22421499999999], [49.713679, -97.35036600000001], [49.713679, -97.35036600000001], [43.050553, -80.248423], [43.403221, -79.639319], [45.410095, -73.972965], [53.395531000000005, -113.71368000000001], [49.19854, -123.22421499999999], [49.713679, -97.35036600000001], [44.961937, -76.353876], [44.961937, -76.353876], [46.452865, -84.627477], [52.304085, -106.60383700000001], [49.713679, -97.35036600000001], [50.84278, -114.31603799999999], [50.84278, -114.31603799999999], [45.410095, -73.972965], [44.016826, -79.50931700000001], [43.403221, -79.639319], [43.829311, -79.48563299999999], [45.410095, -73.972965], [43.798004, -79.429128], [49.219352, -122.89343400000001], [45.410095, -73.972965], [49.19854, -123.22421499999999], [44.318131, -79.746259], [43.403221, -79.639319], [53.599415, -113.70708799999998], [53.169214000000004, -105.817881], [45.410095, -73.972965], [43.050553, -80.248423], [43.050553, -80.248423], [49.19854, -123.22421499999999], [45.410095, -73.972965], [50.700939, -114.003883], [44.940594, -75.156426], [43.050553, -80.248423], [43.403221, -79.639319], [49.713679, -97.35036600000001], [48.289211, -89.429427], [45.410095, -73.972965], [43.050553, -80.248423], [45.398467, -73.84657], [49.19854, -123.22421499999999], [50.84278, -114.31603799999999], [43.403221, -79.639319], [53.395531000000005, -113.71368000000001], [50.84278, -114.31603799999999], [44.961937, -76.353876], [43.403221, -79.639319], [42.824496, -81.39124699999999], [43.050553, -80.248423], [49.001921, -122.958937], [49.713679, -97.35036600000001], [43.286245, -79.959313], [45.410095, -73.972965], [55.32948100000001, -114.00115900000002], [43.473802, -80.326879], [43.366298, -64.237659], [42.68331, -79.754082], [49.713679, -97.35036600000001], [49.713679, -97.35036600000001], [49.239763, -107.733508], [45.410095, -73.972965], [43.366298, -64.237659], [43.403221, -79.639319], [43.789623, -79.372512], [43.050553, -80.248423], [43.443337, -80.626184], [51.254723999999996, -57.107856000000005], [49.293965, -123.128272], [43.050553, -80.248423], [49.713679, -97.35036600000001], [43.235487, -81.168279], [50.39659, -104.778398], [49.293965, -123.128272], [49.19854, -123.22421499999999], [43.104746999999996, -79.42639], [43.403221, -79.639319], [45.868781, -66.783402]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 15,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_502a0c3f2a474cb79a29f18fccf9d14d);
+        
+    
+            L.control.fullscreen({
+                position: 'topright',
+                title: 'Expand me',
+                titleCancel: 'Exit me',
+                forceSeparateButton: true,
+                }).addTo(map_502a0c3f2a474cb79a29f18fccf9d14d);
+            map_502a0c3f2a474cb79a29f18fccf9d14d.on('enterFullscreen', function(){
+                console.log('entered fullscreen');
+            });
+
+        
+</script>
